@@ -38,6 +38,10 @@
   .btn-secondary {
     @apply bg-surface-container-high text-on-surface-variant font-bold py-3.5 rounded-xl hover:bg-surface-container-highest active:scale-[0.98] transition-all flex items-center justify-center;
   }
+
+  .table-container {
+    @apply w-full overflow-x-auto no-scrollbar border border-outline-variant/10 rounded-2xl bg-white shadow-sm;
+  }
 }
 
 .custom-scrollbar::-webkit-scrollbar {

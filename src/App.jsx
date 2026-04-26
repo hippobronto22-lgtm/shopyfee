@@ -1651,7 +1651,7 @@ export default function App() {
               </div>
 
               {/* Metrics Bento Grid */}
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12">
                 {/* Metric 1: Revenue */}
                 <div className="card-premium p-8 group">
                   <div className="flex justify-between items-start mb-6">
@@ -1852,13 +1852,13 @@ export default function App() {
 
               {/* SUB-TAB: KASIR */}
               {activePosSubTab === 'kasir' && (
-                <div className="flex flex-col md:flex-row gap-8">
+                <div className="flex flex-col xl:flex-row gap-8">
                   {/* Daftar Produk */}
                   <div className="flex-1 flex flex-col gap-6">
                     <div className="card-premium p-8">
-                      <div className="flex flex-col md:flex-row gap-6 mb-8">
+                      <div className="flex flex-col xl:flex-row gap-6 mb-8">
                         {/* Date Picker */}
-                        <div className="w-full md:w-56">
+                        <div className="w-full xl:w-56">
                           <label className="block text-[10px] font-black text-on-surface-variant/50 uppercase tracking-[0.2em] mb-2 ml-1">Tanggal Transaksi</label>
                           <div className="relative group">
                             <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-primary" />
@@ -1906,7 +1906,7 @@ export default function App() {
                                 ? 'bg-surface-container-high/50 border-outline-variant/10 opacity-60 pointer-events-none' 
                                 : 'bg-surface-container-lowest hover:border-primary/40 hover:shadow-premium-hover active:scale-[0.97]'}`}
                           >
-                            <h4 className="font-bold text-on-surface text-sm line-clamp-2 min-h-[2.5rem] leading-tight mb-4 group-hover:text-primary transition-colors">{product.name}</h4>
+                            <h4 className="font-bold text-on-surface text-xs sm:text-sm line-clamp-2 min-h-[2rem] sm:min-h-[2.5rem] leading-tight mb-3 sm:mb-4 group-hover:text-primary transition-colors break-words">{product.name}</h4>
                             <div className="mt-auto flex items-end justify-between">
                               <div>
                                 <p className="text-[10px] font-black text-on-surface-variant/40 uppercase tracking-widest mb-1">Harga</p>
@@ -1930,7 +1930,7 @@ export default function App() {
                   </div>
 
                   {/* Keranjang (Cart) */}
-                  <div className="w-full md:w-[320px] lg:w-[400px] shrink-0">
+                  <div className="w-full xl:w-[400px] shrink-0">
                     <div className="card-premium p-8 sticky top-24">
                       <div className="flex items-center justify-between mb-8 pb-4 border-b border-outline-variant/10">
                         <div className="flex items-center gap-3">
@@ -1957,7 +1957,7 @@ export default function App() {
                           cart.map(item => (
                             <div key={item.product.id} className="flex items-center gap-4 p-4 bg-surface-container-low rounded-2xl border border-outline-variant/5 group transition-all hover:bg-white hover:shadow-sm">
                               <div className="flex-1 min-w-0">
-                                <p className="text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">{item.product.name}</p>
+                                <p className="text-xs sm:text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">{item.product.name}</p>
                                 <p className="text-xs font-medium text-on-surface-variant/60">
                                   {formatRp(item.product.price)} <span className="mx-1 opacity-30">×</span> 
                                   <span className="text-primary font-black">{item.qty}</span>
@@ -2851,7 +2851,7 @@ export default function App() {
               </div>
 
               {/* Kartu Ringkasan Keuangan Laba/Rugi (Berdasarkan Filter) */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4 sm:gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 sm:gap-6">
                 <div className="card-premium p-6 group">
                   <div className="flex justify-between items-start mb-4">
                     <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
@@ -2859,7 +2859,7 @@ export default function App() {
                     </div>
                     <div className="text-[10px] font-black text-on-surface-variant/40 uppercase tracking-widest">Revenue</div>
                   </div>
-                  <h4 className="text-[10px] font-black text-on-surface-variant/60 uppercase tracking-widest mb-1">Total Omzet</h4>
+                  <h4 className="text-[9px] sm:text-[10px] font-black uppercase tracking-widest mb-1">Total Omzet</h4>
                   <div className="text-xl font-black text-on-surface tracking-tighter mb-2">{formatRp(reportTotalRevenue)}</div>
                   <p className="text-[10px] text-on-surface-variant/40 font-bold">{filteredTransactions.length} Transaksi</p>
                 </div>
@@ -2871,7 +2871,7 @@ export default function App() {
                     </div>
                     <div className="text-[10px] font-black text-on-surface-variant/40 uppercase tracking-widest">COGS</div>
                   </div>
-                  <h4 className="text-[10px] font-black text-on-surface-variant/60 uppercase tracking-widest mb-1">Total HPP</h4>
+                  <h4 className="text-[9px] sm:text-[10px] font-black uppercase tracking-widest mb-1">Total HPP</h4>
                   <div className="text-xl font-black text-on-surface tracking-tighter mb-2">{formatRp(reportTotalHpp)}</div>
                   <p className="text-[10px] text-on-surface-variant/40 font-bold">Modal Terjual</p>
                 </div>
@@ -3373,10 +3373,10 @@ export default function App() {
                         <img src="app-logo.png" alt="ShopyFee Logo" className="w-full h-full object-cover" />
                       </div>
                       
-                      <h2 className="text-3xl font-black text-on-surface tracking-tighter mb-2">ShopyFee</h2>
-                      <p className="text-xs font-black text-primary uppercase tracking-[0.4em] mb-12">Premium Business Engine</p>
+                      <h2 className="text-2xl font-black text-on-surface tracking-tighter mb-2">ShopyFee</h2>
+                      <p className="text-[10px] font-black text-primary uppercase tracking-[0.4em] mb-12">Premium Business Engine</p>
                       
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-2xl text-left">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-2xl text-left">
                         <div className="p-6 bg-surface-container-low rounded-2xl border border-outline-variant/10 hover:border-primary/20 transition-all group">
                           <p className="text-[10px] font-black text-on-surface-variant/40 uppercase tracking-widest mb-2">Developer</p>
                           <p className="text-sm font-bold text-on-surface group-hover:text-primary transition-colors">CariCuan.app</p>

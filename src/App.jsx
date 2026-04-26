@@ -1357,7 +1357,7 @@ export default function App() {
           </div>
           
           <h1 className="text-3xl font-black text-slate-800 tracking-tight mb-2">
-            Shopy<span className="text-[#F15A24]">Fee</span>
+            Shope<span className="text-[#F15A24]">Fee</span>
           </h1>
           <p className="text-[8px] sm:text-[9px] font-black text-slate-400 uppercase tracking-[0.25em] mb-10 text-center">
             Business Intelligence Suite

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Kalkulator Shopee</string>
+    <string name="title_activity_main">Kalkulator Shopee</string>
+    <string name="package_name">com.shopee.calculator</string>
+    <string name="custom_url_scheme">com.shopee.calculator</string>
+</resources>

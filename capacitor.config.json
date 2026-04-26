@@ -1,0 +1,6 @@
+{
+  "appId": "com.shopee.calculator",
+  "appName": "Kalkulator Shopee",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

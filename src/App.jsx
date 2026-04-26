@@ -1856,9 +1856,9 @@ export default function App() {
                   {/* Daftar Produk */}
                   <div className="flex-1 flex flex-col gap-6">
                     <div className="card-premium p-8">
-                      <div className="flex flex-col sm:flex-row gap-6 mb-8">
+                      <div className="flex flex-col md:flex-row gap-6 mb-8">
                         {/* Date Picker */}
-                        <div className="w-full sm:w-56">
+                        <div className="w-full md:w-56">
                           <label className="block text-[10px] font-black text-on-surface-variant/50 uppercase tracking-[0.2em] mb-2 ml-1">Tanggal Transaksi</label>
                           <div className="relative group">
                             <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-primary" />
@@ -3370,7 +3370,7 @@ export default function App() {
                     
                     <div className="relative flex flex-col items-center text-center py-10">
                       <div className="w-24 h-24 bg-white rounded-3xl flex items-center justify-center mb-8 rotate-3 hover:rotate-0 transition-transform duration-500 shadow-premium overflow-hidden border border-outline-variant/10">
-                        <img src="/app-logo.png" alt="ShopyFee Logo" className="w-full h-full object-cover" />
+                        <img src="app-logo.png" alt="ShopyFee Logo" className="w-full h-full object-cover" />
                       </div>
                       
                       <h2 className="text-3xl font-black text-on-surface tracking-tighter mb-2">ShopyFee</h2>

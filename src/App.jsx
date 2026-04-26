@@ -1353,7 +1353,7 @@ export default function App() {
         <div className="bg-white rounded-[2.5rem] p-8 sm:p-10 w-full max-w-sm shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)] relative z-10 flex flex-col items-center animate-scale-in">
           
           <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 rounded-[1.5rem] overflow-hidden shadow-lg shadow-[#F15A24]/20">
-            <img src="/icon.png" alt="ShopyFee Logo" className="w-full h-full object-cover" />
+            <img src="icon.png" alt="ShopyFee Logo" className="w-full h-full object-cover" />
           </div>
           
           <h1 className="text-3xl font-black text-slate-800 tracking-tight mb-2">

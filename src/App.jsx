@@ -1887,7 +1887,7 @@ export default function App() {
                         </div>
                       </div>
 
-                      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                         {filteredPosProducts.length === 0 ? (
                           <div className="col-span-full py-20 flex flex-col items-center justify-center opacity-40">
                             <Search className="w-12 h-12 mb-4" />
@@ -1906,7 +1906,7 @@ export default function App() {
                                 ? 'bg-surface-container-high/50 border-outline-variant/10 opacity-60 pointer-events-none' 
                                 : 'bg-surface-container-lowest hover:border-primary/40 hover:shadow-premium-hover active:scale-[0.97]'}`}
                           >
-                            <h4 className="font-bold text-on-surface text-sm line-clamp-2 min-h-[2.5rem] leading-tight mb-4 group-hover:text-primary transition-colors truncate">{product.name}</h4>
+                            <h4 className="font-bold text-on-surface text-sm line-clamp-2 min-h-[2.5rem] leading-tight mb-4 group-hover:text-primary transition-colors">{product.name}</h4>
                             <div className="mt-auto flex items-end justify-between">
                               <div>
                                 <p className="text-[10px] font-black text-on-surface-variant/40 uppercase tracking-widest mb-1">Harga</p>
@@ -2823,7 +2823,7 @@ export default function App() {
               {/* Filter Section untuk Laporan */}
               <div className="card-premium p-8">
                 <div className="flex flex-col xl:flex-row justify-between items-start xl:items-end gap-8">
-                  <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-2xl">
+                  <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-6 w-full max-w-2xl">
                     <div>
                       <label className="block text-[10px] font-black text-on-surface-variant/50 uppercase tracking-[0.2em] mb-2 ml-1">Rentang Tanggal Mulai</label>
                       <input type="date" className="input-premium" value={reportFilter.startDate} onChange={(e) => setReportFilter({...reportFilter, startDate: e.target.value})} />
@@ -2851,7 +2851,7 @@ export default function App() {
               </div>
 
               {/* Kartu Ringkasan Keuangan Laba/Rugi (Berdasarkan Filter) */}
-              <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 sm:gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4 sm:gap-6">
                 <div className="card-premium p-6 group">
                   <div className="flex justify-between items-start mb-4">
                     <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
